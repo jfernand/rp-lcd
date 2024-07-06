@@ -1,0 +1,27 @@
+[package]
+name = "rp-lcd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = { version = "0.7.7" }
+cortex-m-rt = "0.7.3"
+critical-section = "1.0.0"
+defmt-serial = "0.10.0"
+embedded-alloc = { version = "0.5.1", default-features = true }
+embedded-graphics = { version = "0.7.1" }# 0.7.1 works
+embedded-graphics-core = "0.4.0"
+embedded-hal = "1.0.0"
+fugit = "0.3.7" #ok
+nb = "1.1.0" #ok
+panic-halt = "0.2.0"
+rp2040-hal = { version = "0.10.2", features = ["critical-section-impl"] }
+st7735-lcd = { version = "0.8.1", features = ["graphics"] } #needs to be 0.8.1
+usb-device = "0.3.2"
+usbd-serial = "0.2.2"
+waveshare-rp2040-lcd-0-96 = "0.8.0"
+heapless = "0.8.0"
+num-traits = { version = "0.2.19" , default-features = false}
+
+#[patch.embedded-canvas]
+#embedded-graphics-core="0.7.1"
